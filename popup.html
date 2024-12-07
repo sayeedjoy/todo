@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tasks</h1>
+      <div class="header-controls">
+        <button id="clearAll" class="icon-button" title="Clear All">🗑️</button>
+        <button id="themeToggle" class="icon-button" title="Theme">🌙</button>
+      </div>
+    </header>
+
+    <form id="addTaskForm" class="add-task-form">
+      <input 
+        type="text" 
+        id="taskInput" 
+        placeholder="Add a task..."
+        required
+      >
+      <button type="submit" class="add-btn">+</button>
+    </form>
+
+    <div class="task-list" id="taskList"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
